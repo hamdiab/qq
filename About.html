@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Debsite DesignEasy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <div class="overaly-b"></div>
+        <header>
+            <nav>
+                <!-- <a href="index1.html"> -->
+                <h2 class="title">EDUFORD </h2>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+
+                    </ul>
+
+                </div>
+
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </header>
+        <div class="indrodection">
+            <h1>About Us</h1>
+        </div>
+    </section>
+    <!-- ------about us contact------ -->
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Maiking website is now of the easiest thing in the world. You just need to learn HTML, CSS, Javascript and you are good to go .<br> Maiking website is now of the easiest thing in the world. You just need to learn HTML, CSS, Javascript
+                    and you are good to go,Maiking website is now of the easiest thing in the world.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="imgs/cob05.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- --------footer------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Maiking website is now of the easiest thing in the world. You just need to learn HTML, CSS, Javascript and you are good to go .<br> Maiking website is now of the easiest thing in the world. You just need to learn HTML, CSS, Javascript and you
+            are good to go,Maiking website is now of the easiest thing in the world.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <a href="/100066718636901/ /ﺣﻤﺪﻱ-ﻋﺒﺪﺍﻟﻔﺘﺎﺡ-ﻋﺒﺪﺍﻟﻠﻪ https://ar-ar.facebook.com/people" class="ham-ico"><i class="fab fa-facebook"></i></a><a href="/100066718636901/ /ﺣﻤﺪﻱ-ﻋﺒﺪﺍﻟﻔﺘﺎﺡ-ﻋﺒﺪﺍﻟﻠﻪ https://ar-ar.facebook.com/people" class="hamdi">Hamdi Abdelfattah</a></p>
+    </section>
+    <!-- ------javascript fot toggle------ -->
+    <script src="code.js">
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        };
+
+        // -- -- --sticky menu-- -- --
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
